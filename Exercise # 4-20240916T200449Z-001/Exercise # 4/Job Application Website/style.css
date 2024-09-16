@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcd1c6;
+}
+
+header {
+    background-color: #06514ecc;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    margin-top: 80px; /* Adjust if the header height changes */
+}
+
+/* Home.php Styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px;
+    color: #555;
+}
+
+.card a {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #06514ecc;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: #0aa09bcc; /* Slightly darker shade for hover effect */
+}
+
+/* Form.php Styles */
+.form-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 80px auto 20px; /* Center horizontally and provide margin at the top */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+}
+
+.job-info, .error {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+form input,
+form select,
+form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #888;
+}
+
+form button,
+form .back-button {
+    padding: 12px;
+    font-size: 1.1em;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button {
+    background-color: #06514ecc;
+}
+
+form button:hover {
+    background-color: #0ed4cdcc;
+}
+
+form .back-button {
+    background-color: #6c757d;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+form .back-button:hover {
+    background-color: #5a6268;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Add space between buttons */
+}
+
+/* Confirm.php Styles */
+.confirmation-container {
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 80px auto; /* Center horizontally and provide margin at the top */
+    border: 1px solid #ddd; /* Border to create paper-like effect */
+    position: relative;
+}
+
+.confirmation-container::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px dashed #aaa; /* Dashed border to mimic paper edges */
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.confirmation-container h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+}
+
+.confirmation-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.confirmation-container p strong {
+    color: #333;
+}
